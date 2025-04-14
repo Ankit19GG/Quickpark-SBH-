@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Park - Smart Car Parking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="logo">Quick Park</div>
+
+        <div class="top-right">
+            <div class="search-lang">
+                <input type="text" placeholder="Search for parking locations..." aria-label="Search Parking" />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+
+            <div class="language-select">
+                <span class="text">English</span>
+                <i class="fa-solid fa-caret-up caret-icon"></i>
+                <div class="lang-dropdown">
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Bengali</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="login-icon" aria-label="Login Section">
+                <i class="fa-solid fa-user"></i>
+                <p>Hello, Sign in</p>
+            </div>
+
+            <div class="hamburger" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+            <li><a href="#contact us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+          <h2>Find Parking</h2>
+          <p>Smart & secure solutions for your vehicle</p>
+          <a href="#pricing" class="btn-hero">Find Parking</a>
+        </div>
+      </section>
+      
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <h2 class="section-heading">Key Features </h2>
+        <div class="features top-row">
+            <div class="feature-box">
+                <img src="image1.png" alt="Real-Time Slot Availability" />
+                <h3>1. Real-Time Slot Availability</h3>
+                <p>Detects & displays free/occupied slot using IOT sensors</p>
+            </div>
+            <div class="feature-box">
+                <img src="image2.png" alt="Smart Reservation" />
+                <h3>2. Smart Reservation</h3>
+                <p>Allows users to book parking slots in advance</p>
+            </div>
+            <div class="feature-box">
+                <img src="image3.png" alt="Slot Time Extension" />
+                <h3>3. Slot Time Extension</h3>
+                <p>Allows users to extend booking if needed</p>
+            </div>
+            <div class="feature-box">
+                <img src="image4.png" alt="Payment Integration" />
+                <h3>4. Payment Integration</h3>
+                <p>Allows secure online payments</p>
+            </div>
+        </div>
+        <div class="features bottom-row">
+            <div class="feature-box">
+                <img src="image5.png" alt="Parking Guidance System" />
+                <h3>5. Parking Guidance System</h3>
+                <p>Guides drivers to the nearest available slot using LEDs or mobile directions</p>
+            </div>
+            <div class="feature-box">
+                <img src="image6.png" alt="EV Slot Availability" />
+                <h3>6. EV Slot Availability</h3>
+                <p>Making it eco-friendly and innovative</p>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="pricing">
+        <h2 class="text-center">Choose Your Plan</h2>
+        <div class="pricing-container">
+          <!-- Starter Plan -->
+          <div class="pricing-card">
+            <h3>Starter</h3>
+            <h4>Free</h4>
+            <ul>
+              <li>Basic Parking Access</li>
+              <li>1 Vehicle Slot</li>
+              <li>Email Support</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Get Started</a>
+          </div>
+      
+          <!-- Pro Plan -->
+          <div class="pricing-card">
+            <h3>Pro</h3>
+            <h4>$9.99/month</h4>
+            <ul>
+              <li>Smart Slot Reservation</li>
+              <li>Up to 3 Vehicles</li>
+              <li>Priority Support</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Upgrade</a>
+          </div>
+      
+          <!-- Enterprise Plan -->
+          <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <h4>$24.99/month</h4>
+            <ul>
+              <li>Unlimited Slots</li>
+              <li>Fleet Management</li>
+              <li>24/7 Dedicated Support</li>
+            </ul>
+            <a href="#" class="btn btn-warning">Contact Sales</a>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <h2 class="section-heading">About Us</h2>
+        <div class="about">
+            <p>QuickPark is revolutionizing the way people find and secure parking
+                spaces in urban areas. Our mission is to make parking hassle-free
+                through innovative technology solutions.
+              </p>
+              <p>
+                Founded in 2023, we've already helped thousands of drivers save time
+                and reduce stress when looking for parking.
+              </p>
+    
+        </div>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section class="section" id="terms">
+        <h2 class="section-heading">Terms and Conditions</h2>
+        <div class="about">
+            <p>By using our services, you agree to comply with all applicable parking rules. Parking availability is
+                subject to change. Payments once made are non-refundable. Ensure timely check-in and check-out to avoid
+                penalties.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Us Section -->
+    <section class="section" id="contact us">
+        <h2 class="section-heading">Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="c6a353d3-87ec-494c-8624-f1cd360ffb4b">  
+            <input type="hidden" name="redirect" value="index.html">
+
+
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="text" name="honeypot" style="display:none">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+   
+    <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-logo">
+                <div class="logo-icon"><span></span><span></span></div>
+                <h2>QuickPark</h2>
+                <p>Smart Parking Solutions</p>
+              </div>
+              <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#terms">Terms & Conditions</a></li>
+                  <li><a href="#contact">Contact us</a></li>
+                </ul>
+              </div>
+              <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@quickpark.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+              </div>
+              <div class="social-links">
+                <h3>Socials</h3>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p>&copy; 2025 QuickPark. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
