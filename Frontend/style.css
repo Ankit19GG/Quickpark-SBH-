@@ -1,6 +1,6 @@
 :root {
-  --primary: #1e628a;
-  --accent: #2563eb;
+  --primary: #2563eb;
+  --accent: #1d4aa9;
   --light: #ffffff;
   --text: #333;
 }
@@ -157,16 +157,18 @@ body {
 
 .login-icon {
   text-align: center;
-  color: white;
+  color: rgb(234, 234, 234);
   cursor: pointer;
+  display: flex;
 }
 
 .login-icon i {
   font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 .login-icon p {
-  font-size: 0.85rem;
+  font-size: 0.90rem;
 }
 
 .hamburger {
@@ -733,4 +735,100 @@ footer {
   }
 }
 
-  
+/* Login Modal Styles */
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-modal-content h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.login-modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-modal-content button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-modal-content button:hover {
+  background-color: var(--accent);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+/* Hamburger Dropdown */
+.hamburger-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.hamburger-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.hamburger-dropdown li {
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.hamburger-dropdown li:hover {
+  background-color: #f3f4f6;
+}
+
+.hamburger-dropdown a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
